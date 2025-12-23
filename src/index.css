@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fredoka+One&family=Comic+Neue:wght@400;700&family=Montserrat:wght@700;800;900&display=swap');
+@import "tailwindcss";
+
+:root {
+  --primary-teal: #008891;      /* Fresh teal - unique and modern */
+  --primary-coral: #ff7a5a;     /* Warm coral - playful but not orange */
+  --navy-blue: #0a2e5c;         /* Deep navy for professionalism */
+  --mint-green: #64d8cb;        /* Soft mint for accents */
+  --sunshine-yellow: #ffc145;   /* Bright yellow for highlights */
+  --lavender: #a685e2;          /* Soft purple for variety */
+  --slate-gray: #4a5568;        /* Neutral gray for text */
+  --soft-pink: #ff8da1;         /* Gentle pink for playful elements */
+  --forest-green: #2d5a27;      /* Nature-inspired green */
+  --sky-blue: #5dade2;          /* Light sky blue */
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Logo Styling - Simple solid colors */
+.logo-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #008891; /* Solid teal color */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.logo-subtext {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
+  color: #ff7a5a; /* Solid coral color */
+  letter-spacing: 1px;
+}
+
+.font-primary {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-playful {
+  font-family: 'Fredoka One', cursive;
+}
+
+.font-cursive {
+  font-family: 'Comic Neue', cursive;
+}
+
+.font-bold-montserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+}
+
+/* Remove all default link styling */
+a {
+  text-decoration: none !important;
+}
+
+/* No gradient text - simple colors */
+.gradient-text {
+  color: #008891; /* Simple teal color instead of gradient */
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+
+/* Color utility classes - ALL SOLID COLORS */
+.bg-primary-teal {
+  background-color: #008891;
+}
+
+.bg-primary-coral {
+  background-color: #ff7a5a;
+}
+
+.bg-navy-blue {
+  background-color: #0a2e5c;
+}
+
+.bg-mint-green {
+  background-color: #64d8cb;
+}
+
+.bg-sunshine-yellow {
+  background-color: #ffc145;
+}
+
+.bg-lavender {
+  background-color: #a685e2;
+}
+
+.bg-soft-pink {
+  background-color: #ff8da1;
+}
+
+.bg-forest-green {
+  background-color: #2d5a27;
+}
+
+.bg-sky-blue {
+  background-color: #5dade2;
+}
+
+/* Text colors */
+.text-primary-teal {
+  color: #008891;
+}
+
+.text-primary-coral {
+  color: #ff7a5a;
+}
+
+.text-navy-blue {
+  color: #0a2e5c;
+}
+
+.text-mint-green {
+  color: #64d8cb;
+}
+
+.text-sunshine-yellow {
+  color: #ffc145;
+}
+
+.text-lavender {
+  color: #a685e2;
+}
+
+.text-soft-pink {
+  color: #ff8da1;
+}
+
+.text-forest-green {
+  color: #2d5a27;
+}
+
+.text-sky-blue {
+  color: #5dade2;
+}
+
+/* Border colors */
+.border-primary-teal {
+  border-color: #008891;
+}
+
+.border-primary-coral {
+  border-color: #ff7a5a;
+}
+
+.border-navy-blue {
+  border-color: #0a2e5c;
+}
+
+.border-mint-green {
+  border-color: #64d8cb;
+}
+
+/* Hover effects */
+.hover\:bg-primary-teal:hover {
+  background-color: #008891;
+}
+
+.hover\:bg-primary-coral:hover {
+  background-color: #ff7a5a;
+}
+
+.hover\:text-primary-teal:hover {
+  color: #008891;
+}
+
+.hover\:text-primary-coral:hover {
+  color: #ff7a5a;
+}
+
+/* Color combinations for specific uses */
+.nature-palette {
+  color: #008891; /* teal */
+  background-color: #64d8cb; /* mint green */
+}
+
+.playful-palette {
+  color: #ff7a5a; /* coral */
+  background-color: #ffc145; /* sunshine yellow */
+}
+
+.calm-palette {
+  color: #0a2e5c; /* navy blue */
+  background-color: #5dade2; /* sky blue */
+}
+
+.creative-palette {
+  color: #a685e2; /* lavender */
+  background-color: #ff8da1; /* soft pink */
+}
+
+/* Educational palette */
+.education-primary {
+  color: #008891; /* teal - represents learning & growth */
+}
+
+.education-secondary {
+  color: #ff7a5a; /* coral - represents creativity */
+}
+
+.education-accent {
+  color: #ffc145; /* yellow - represents energy & joy */
+}
+
+.education-neutral {
+  color: #0a2e5c; /* navy - represents stability */
+}

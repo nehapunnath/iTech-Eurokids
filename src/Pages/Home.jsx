@@ -406,7 +406,7 @@ const Home = () => {
       {/* Marquee Slider Section */}
       <section className="py-12 bg-gradient-to-r from-navy-blue to-navy-blue/90 overflow-hidden">
         <div className="container mx-auto px-4 mb-8">
-          <h2 className="text-3xl font-bold text-white text-center mb-2">
+          <h2 className="text-3xl font-bold text-navy-blue text-center mb-2">
             Our Services & Facilities
           </h2>
           <p className="text-sky-blue text-center">

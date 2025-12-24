@@ -382,7 +382,7 @@ const Academics = () => {
       </section> */}
 
       {/* Teaching Methodology */}
-      {/* <section className="py-16 bg-gradient-to-br from-primary-teal/10 to-primary-coral/10">
+      <section className="py-16 bg-gradient-to-br from-primary-teal/10 to-primary-coral/10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-navy-blue mb-4">
@@ -415,10 +415,10 @@ const Academics = () => {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Assessment System */}
-      {/* <section className="py-16 bg-white">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-navy-blue mb-4">
@@ -436,9 +436,7 @@ const Academics = () => {
                 className="bg-gradient-to-br from-white to-blue-50 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border border-blue-100"
               >
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="bg-primary-teal/10 p-3 rounded-lg">
-                    <FaChartLine className="text-primary-teal text-xl" />
-                  </div>
+                 
                   <div>
                     <div className="text-sm font-semibold text-primary-coral">{assessment.frequency}</div>
                     <h3 className="text-lg font-bold text-navy-blue">{assessment.type}</h3>
@@ -459,7 +457,7 @@ const Academics = () => {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Special Features */}
       <section className="py-16 bg-gradient-to-br from-primary-teal/10 to-primary-coral/10">

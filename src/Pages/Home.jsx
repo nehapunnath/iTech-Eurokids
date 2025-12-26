@@ -548,6 +548,167 @@ const Home = () => {
         </div>
       </section>
 
+            {/* Gallery Section */}
+      <section className="py-16 bg-gradient-to-b from-white to-blue-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-navy-blue mb-4">
+              Our Gallery
+            </h2>
+            <p className="text-lg text-slate-gray max-w-2xl mx-auto">
+              Capturing joyful moments of learning, play, and growth at iTECH Eurokids
+            </p>
+          </div>
+
+          {/* Gallery Marquee Container */}
+          <div className="relative overflow-hidden py-8">
+            <div className="flex gap-6 animate-scroll-left">
+              {/* First Set */}
+              {[
+                {
+                  id: 1,
+                  image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80',
+                  title: 'Learning Activities',
+                  description: 'Interactive learning sessions'
+                },
+                {
+                  id: 2,
+                  image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
+                  title: 'Play Area',
+                  description: 'Safe and fun play spaces'
+                },
+                {
+                  id: 3,
+                  image: 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w-800&q=80',
+                  title: 'Art & Craft',
+                  description: 'Creative expression time'
+                },
+                {
+                  id: 4,
+                  image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80',
+                  title: 'Group Activities',
+                  description: 'Team building exercises'
+                },
+                {
+                  id: 5,
+                  image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80',
+                  title: 'Smart Classrooms',
+                  description: 'Technology integrated learning'
+                },
+                {
+                  id: 6,
+                  image: 'https://images.pexels.com/photos/3992949/pexels-photo-3992949.jpeg?cs=srgb&dl=pexels-cdc-library-3992949.jpg&fm=jpg',
+                  title: 'Day Care',
+                  description: 'Comfortable resting areas'
+                }
+              ].map((item, index) => (
+                <div
+                  key={`gallery-${item.id}`}
+                  className="flex-shrink-0 w-72 md:w-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group"
+                >
+                  <div className="relative h-56 overflow-hidden">
+                    <img 
+                      src={item.image} 
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                    <div className="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+                      <h4 className="font-bold text-lg mb-1">{item.title}</h4>
+                      <p className="text-sm text-blue-100">{item.description}</p>
+                    </div> */}
+                  </div>
+                  {/* <div className="bg-white p-4">
+                    <h4 className="font-bold text-navy-blue">{item.title}</h4>
+                    <p className="text-slate-gray text-sm">{item.description}</p>
+                  </div> */}
+                </div>
+              ))}
+
+              {/* Duplicate Set for Continuous Scroll */}
+              {[
+                {
+                  id: 1,
+                  image: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80',
+                  title: 'Learning Activities',
+                  description: 'Interactive learning sessions'
+                },
+                {
+                  id: 2,
+                  image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80',
+                  title: 'Play Area',
+                  description: 'Safe and fun play spaces'
+                },
+                {
+                  id: 3,
+                  image: 'https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w-800&q=80',
+                  title: 'Art & Craft',
+                  description: 'Creative expression time'
+                },
+                {
+                  id: 4,
+                  image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80',
+                  title: 'Group Activities',
+                  description: 'Team building exercises'
+                },
+                {
+                  id: 5,
+                  image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=800&q=80',
+                  title: 'Smart Classrooms',
+                  description: 'Technology integrated learning'
+                },
+                {
+                  id: 6,
+                  image: 'https://images.pexels.com/photos/3992949/pexels-photo-3992949.jpeg?cs=srgb&dl=pexels-cdc-library-3992949.jpg&fm=jpg',
+                  title: 'Day Care',
+                  description: 'Comfortable resting areas'
+                }
+              ].map((item, index) => (
+                <div
+                  key={`gallery-duplicate-${item.id}`}
+                  className="flex-shrink-0 w-72 md:w-80 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 group"
+                >
+                  <div className="relative h-56 overflow-hidden">
+                    <img 
+                      src={item.image} 
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                   
+                  </div>
+                 
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Add CSS for the animation */}
+          <style jsx>{`
+            @keyframes scroll-left {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-50%);
+              }
+            }
+            .animate-scroll-left {
+              animation: scroll-left 40s linear infinite;
+              display: flex;
+              width: max-content;
+            }
+            .animate-scroll-left:hover {
+              animation-play-state: paused;
+            }
+          `}</style>
+
+          
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section className="py-16 bg-gradient-to-br from-primary-teal/10 to-primary-coral/10">
         <div className="container mx-auto px-4">
